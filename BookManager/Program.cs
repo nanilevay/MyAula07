@@ -32,7 +32,9 @@ namespace BookManager
                 Console.WriteLine("length:" + bookList[j].GetTitleLength());
                 Console.WriteLine("author:" + bookList[j].GetAuthor());
             }
-         
+
+            Console.WriteLine(Book.Inc());
+
         }
     }
 }
