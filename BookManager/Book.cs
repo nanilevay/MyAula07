@@ -8,8 +8,8 @@ namespace BookManager
     {
         private string title;
         private string author;
-        private int pages;
-        private int wordCount;
+      //private int pages;
+      //private int wordCount;
 
         public Book (string title, string author)
         {
@@ -28,14 +28,16 @@ namespace BookManager
                 this.title = title;
         }
 
-        public int GetTitleLength(string title)
+        public string GetAuthor()
         {
-            return this.title.Length;
+            return author;
         }
 
-        public void AssignWordCountFromText(string text)
-        {
-            wordCount = text.Split(' ').Length;
-        }
+        public int GetTitleLength() => title.Length;
+
+     // public void AssignWordCountFromText(string text)
+     // {
+     //     wordCount = text.Split(' ').Length;
+     // }
     }
 }
